@@ -1,5 +1,18 @@
+# Ignore local virtual environments
 venv/
+.venv/
+
+# Ignore python cache files
 __pycache__/
-*.db
+*.pyc
+
+# Ignore heavy model weight files and caches
 *.h5
-.DS_Store
+*.pth
+*.onnx
+*.pb
+*.weights
+.deepface/
+
+# Ignore local audit database
+*.db
